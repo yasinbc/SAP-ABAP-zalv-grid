@@ -148,7 +148,8 @@ CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
    OTHERS                            = 2
           .
 IF sy-subrc <> 0.
-* Implement suitable error handling here
+  MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO
+  WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.
 ENDIF.
 
 
