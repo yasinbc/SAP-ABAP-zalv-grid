@@ -37,7 +37,7 @@ START-OF-SELECTION.
 **Field Catalog
 CLEAR ls_fieldcat.
 ls_fieldcat-col_pos = 1.
-ls_fieldcat-fieldname = 'VBELN'.
+ls_fieldcat-fieldname = 'SUCURSAL'.
 ls_fieldcat-tabname = 'IT_VBAP'.
 ls_fieldcat-seltext_m = 'SD NO.'.
 ls_fieldcat-key = 'X'.
@@ -45,52 +45,52 @@ APPEND ls_fieldcat TO lt_fieldcat.
 
 CLEAR ls_fieldcat.
 ls_fieldcat-col_pos = 2.
-ls_fieldcat-fieldname = 'POSNR'.
+ls_fieldcat-fieldname = 'CLAVECLIENTE'.
 ls_fieldcat-tabname = 'IT_VBAP'.
 ls_fieldcat-seltext_m = 'ITEM NO.'.
 APPEND ls_fieldcat TO lt_fieldcat.
 
 CLEAR ls_fieldcat.
 ls_fieldcat-col_pos = 3.
-ls_fieldcat-fieldname = 'MATNR'.
+ls_fieldcat-fieldname = 'NOMBRE_CLIENTE'.
 ls_fieldcat-tabname = 'IT_VBAP'.
 ls_fieldcat-seltext_m = 'MATERIAL NO.'.
 APPEND ls_fieldcat TO lt_fieldcat.
 
 CLEAR ls_fieldcat.
 ls_fieldcat-col_pos = 4.
-ls_fieldcat-fieldname = 'MATKL'.
+ls_fieldcat-fieldname = 'CUENTA'.
 ls_fieldcat-tabname = 'IT_VBAP'.
 ls_fieldcat-seltext_m = 'MATERIAL GROUP'.
 APPEND ls_fieldcat TO lt_fieldcat.
 
 CLEAR ls_fieldcat.
 ls_fieldcat-col_pos = 5.
-ls_fieldcat-fieldname = 'ARKTX'.
+ls_fieldcat-fieldname = 'MONEDA'.
 ls_fieldcat-tabname = 'IT_VBAP'.
 ls_fieldcat-seltext_m = 'DESCRIPTION'.
 APPEND ls_fieldcat TO lt_fieldcat.
 
-CLEAR ls_fieldcat.
-ls_fieldcat-col_pos = 6.
-ls_fieldcat-fieldname = 'NETWR'.
-ls_fieldcat-tabname = 'IT_VBAP'.
-ls_fieldcat-seltext_m = 'AMOUNT'.
-APPEND ls_fieldcat TO lt_fieldcat.
-
-CLEAR ls_fieldcat.
-ls_fieldcat-col_pos = 7.
-ls_fieldcat-fieldname = 'WAERK'.
-ls_fieldcat-tabname = 'IT_VBAP'.
-ls_fieldcat-seltext_m = 'CURRENCY'.
-APPEND ls_fieldcat TO lt_fieldcat.
-
-CLEAR ls_fieldcat.
-ls_fieldcat-col_pos = 8.
-ls_fieldcat-fieldname = 'KLMENG'.
-ls_fieldcat-tabname = 'IT_VBAP'.
-ls_fieldcat-seltext_m = 'QUANTITY'.
-APPEND ls_fieldcat TO lt_fieldcat.
+*CLEAR ls_fieldcat.
+*ls_fieldcat-col_pos = 6.
+*ls_fieldcat-fieldname = 'NETWR'.
+*ls_fieldcat-tabname = 'IT_VBAP'.
+*ls_fieldcat-seltext_m = 'AMOUNT'.
+*APPEND ls_fieldcat TO lt_fieldcat.
+*
+*CLEAR ls_fieldcat.
+*ls_fieldcat-col_pos = 7.
+*ls_fieldcat-fieldname = 'WAERK'.
+*ls_fieldcat-tabname = 'IT_VBAP'.
+*ls_fieldcat-seltext_m = 'CURRENCY'.
+*APPEND ls_fieldcat TO lt_fieldcat.
+*
+*CLEAR ls_fieldcat.
+*ls_fieldcat-col_pos = 8.
+*ls_fieldcat-fieldname = 'KLMENG'.
+*ls_fieldcat-tabname = 'IT_VBAP'.
+*ls_fieldcat-seltext_m = 'QUANTITY'.
+*APPEND ls_fieldcat TO lt_fieldcat.
 
 
 "Displaying ALV Grid Report
